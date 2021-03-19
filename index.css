@@ -1,0 +1,18 @@
+body {
+	height: 100vh;
+	margin: 0;
+
+	--primary: #d93178;
+	--secondary: #ab1aa4;
+	--tertiary: #323c8f;
+
+	transition: --primary 1s, --secondary 1s, --tertiary 1s;
+	background: linear-gradient(var(--primary), transparent),
+		linear-gradient(90deg, var(--secondary), transparent),
+		linear-gradient(-90deg, var(--tertiary), transparent);
+}
+body:hover {
+	--primary: #161f29;
+	--secondary: #7c123e;
+	--tertiary: #00856a;
+}
